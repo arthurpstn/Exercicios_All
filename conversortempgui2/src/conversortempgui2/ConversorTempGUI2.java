@@ -14,7 +14,7 @@ public class ConversorTempGUI2 extends JFrame {
         setTitle("Conversor de Temperaturas");
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new GridLayout(4, 1)); // 4 linhas, 1 coluna
+        setLayout(new GridLayout(4, 1));
 
         // Campo de entrada de temperatura
         JTextField campoTemperatura = new JTextField();
@@ -79,7 +79,7 @@ public class ConversorTempGUI2 extends JFrame {
         setVisible(true);
     }
 
-    // Método principal para iniciar o programa
+    // Método para iniciar o programa
     public static void main(String[] args) {
         new ConversorTempGUI2();
     }
