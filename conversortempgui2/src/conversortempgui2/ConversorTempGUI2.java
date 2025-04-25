@@ -16,11 +16,9 @@ public class ConversorTempGUI2 extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(4, 1));
 
-        // Campo de entrada de temperatura
         JTextField campoTemperatura = new JTextField();
         add(campoTemperatura);
 
-        // Menu suspenso com opções de conversão
         String[] opcoes = {
             "Celsius para Fahrenheit",
             "Fahrenheit para Celsius",
@@ -32,15 +30,13 @@ public class ConversorTempGUI2 extends JFrame {
         JComboBox<String> comboBox = new JComboBox<>(opcoes);
         add(comboBox);
 
-        // Botão para converter
+
         JButton botaoConverter = new JButton("Converter");
         add(botaoConverter);
-
-        // Texto que mostrará o resultado
         JLabel labelResultado = new JLabel("Resultado: ");
         add(labelResultado);
 
-        // Ação ao clicar no botão
+
         botaoConverter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
